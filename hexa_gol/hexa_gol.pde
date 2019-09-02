@@ -1,6 +1,6 @@
-final int DISPLAY_WIDTH = 640;
-final int DISPLAY_HEIGHT = 640;
-int cellSize = 10;
+final int DISPLAY_WIDTH = 1024;
+final int DISPLAY_HEIGHT = 1024;
+int cellSize = 25;
 int W_0, H_0;
 
 int rows, cols;
@@ -12,7 +12,7 @@ boolean[] rulesAlive;
 boolean[] rulesDead;
 
 void setup() {
-  size(640, 640);
+  size(1024, 1024);
   loadRules();
   initializeGrid();
 }
@@ -133,6 +133,8 @@ void keyPressed() {
     makeStep();
   } else if (key == BACKSPACE) {
     rollBack();
+  } else if (key == 'r') {
+     grid = new boolean[rows][cols]; 
   }
 }
 

@@ -1,0 +1,15 @@
+<h1 style="color: #5e9ca0;">&nbsp;</h1>
+<h1 style="text-align: center;"><strong>&nbsp;Hexa-GoL</strong></h1>
+<p><strong>Hexa-GoL </strong>je hexagon&aacute;ln&iacute;, programovateln&yacute; <a href="https://cs.wikipedia.org/wiki/Celul%C3%A1rn%C3%AD_automat">celul&aacute;rn&iacute; automat</a>, jehož zdrojov&yacute; k&oacute;d je volně př&iacute;stupn&yacute; v&nbsp;<a href="https://github.com/Horovtom/Hex-GoL">tomto repozit&aacute;ři</a>. Program je vytvořen pomoc&iacute; knihovny <a href="https://processing.org/">Processing</a>.</p>
+<h3>Použit&iacute;</h3>
+<p>Po spu&scaron;těn&iacute; programu se zobraz&iacute; hexagon&aacute;ln&iacute; mř&iacute;zka. Jej&iacute; velikost lze zvět&scaron;it/zmen&scaron;it stiskem &scaron;ipek&nbsp;<strong>nahoru</strong>/<strong>dolu</strong>. Po zvolen&iacute; velikosti, může uživatel pomoc&iacute; lev&eacute;ho tlač&iacute;tka my&scaron;i <em>oživit</em>/<em>zab&iacute;t</em> buňky v mř&iacute;žce.</p>
+<p>Uživatel prov&eacute;st jeden krok simulace stiskem&nbsp;<strong>mezern&iacute;ku</strong>. Program si pamatuje stav před posledn&iacute;m krokem, uživatel tedy může posledn&iacute; krok simulace vr&aacute;tit stiskem&nbsp;<strong>backspace</strong> (tlač&iacute;tko pro smaz&aacute;n&iacute; znaku).</p>
+<p>Mř&iacute;žku můžeme vr&aacute;tit do původn&iacute;ho stavu stiskem kl&aacute;vesy&nbsp;<strong>r</strong>.</p>
+<h3>Nastaven&iacute; pravidel</h3>
+<p>Pravidla může uživatel nastavit pomoc&iacute; souboru <strong>rules.txt</strong>, kter&yacute; je uložen ve stejn&eacute; složce jako spustiteln&yacute; soubor <strong>hexa_gol.exe</strong>. Tento soubor m&aacute; až 7 ř&aacute;dků ve form&aacute;tu:</p>
+<p style="padding-left: 30px;">[počet sousedů]:[pokud mrtv&aacute;]:[pokud živ&aacute;]</p>
+<p>Pole&nbsp;<em>počet sousedů</em> oček&aacute;v&aacute; jedno č&iacute;slo v rozmez&iacute; 0 až 6, kter&eacute; ud&aacute;v&aacute;, pro kter&yacute; počet sousedů pravidlo plat&iacute;.</p>
+<p>Pole&nbsp;<em>pokud mrtv&aacute;</em> oček&aacute;v&aacute; č&iacute;slo 0 (mrtv&aacute;), nebo 1 (živ&aacute;), kter&eacute; ud&aacute;v&aacute;, jestli m&aacute; buňka po proveden&iacute; pravidla zůstat mrtv&aacute;, nebo ož&iacute;t.&nbsp;</p>
+<p>Pole&nbsp;<em>pokud živ&aacute;</em> oček&aacute;v&aacute; č&iacute;slo 0 (mrtv&aacute;), nebo 1 (živ&aacute;), kter&eacute; ud&aacute;v&aacute;, jestli m&aacute; buňka po proveden&iacute; pravidla zemř&iacute;t, nebo zůstat živ&aacute;.</p>
+<p>Př&iacute;klad obsahu souboru rules.txt:</p>
+<p style="padding-left: 30px;">0:0:0<br />1:0:0<br />2:0:1<br />3:1:1<br />4:0:0<br />5:0:0<br />6:0:0</p>
